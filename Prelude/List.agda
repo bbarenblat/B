@@ -11,15 +11,10 @@ under the License is distributed on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License. -}
 
-module B where
+module B.Prelude.List where
 
-open import B.Prelude.Bool public
-open import B.Prelude.BooleanAlgebra public
-open import B.Prelude.Char public
-open import B.Prelude.List public
-open import B.Prelude.Maybe public
-open import B.Prelude.Product public
-open import B.Prelude.String public
-open import B.Prelude.Sum public
+import Data.List
 
-open import B.Prelude.Eq public
+open Data.List
+  using ([]; _∷_; List)
+  public
